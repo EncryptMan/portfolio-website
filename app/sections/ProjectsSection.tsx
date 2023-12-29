@@ -47,7 +47,7 @@ export default function ProjectsSection() {
             <ProjectCard
                 title='Social Media'
                 description='A basic social media website. It allows users to create account and make posts.'
-                image='/vercel.jpeg'
+                image='/vercel.png'
                 link='/project/socialmedia' skills={['React', 'Next.js', 'Supabase']}
             />
             <ProjectCard
