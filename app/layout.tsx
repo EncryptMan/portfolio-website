@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   description: 'Personal Portfolio Website',
   icons: [
     {
-      url: '/person.png',
-      href: '/person.png',
+      url: '/user.png',
+      href: '/user.png',
     }
   ]
 }
