@@ -1,97 +1,113 @@
 
-import { FaCss3, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { FaBootstrap, FaCss3, FaDocker, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
+import { SiExpress, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { TbBrandNextjs, TbSql } from "react-icons/tb";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { RiSupabaseFill } from "react-icons/ri";
+import { GoCopilot } from "react-icons/go";
+import React from "react";
+import { IconContext } from "react-icons";
 
 
 const skills = [
     {
-        name: 'HTML',
-        icon: <FaHtml5 size={30} />,
-    },
-    {
-        name: 'CSS',
-        icon: <FaCss3 size={30} />,
+        name: 'Python',
+        icon: <FaPython />,
     },
     {
         name: 'JavaScript',
-        icon: <IoLogoJavascript size={30} />,
+        icon: <IoLogoJavascript />,
     },
     {
         name: 'TypeScript',
-        icon: <SiTypescript size={30} />,
+        icon: <SiTypescript />,
+    },
+    {
+        name: 'HTML',
+        icon: <FaHtml5 />,
+    },
+    {
+        name: 'CSS',
+        icon: <FaCss3 />,
     },
     {
         name: 'React',
-        icon: <FaReact size={30} />,
+        icon: <FaReact />,
     },
     {
         name: 'Next.js',
-        icon: <TbBrandNextjs size={30} />,
+        icon: <TbBrandNextjs />,
     },
     {
         name: 'Node.js',
-        icon: <FaNodeJs size={30} />,
+        icon: <FaNodeJs />,
     },
     {
         name: 'Express.js',
-        icon: <FaNodeJs size={30} />,
+        icon: <SiExpress />,
     },
     {
         name: 'MongoDB',
-        icon: <FaNodeJs size={30} />,
+        icon: <SiMongodb />,
     },
     {
-        name: 'Firebase',
-        icon: <FaNodeJs size={30} />,
+        name: 'PostgreSQL',
+        icon: <BiLogoPostgresql />,
     },
     {
-        name: 'Git',
-        icon: <FaNodeJs size={30} />,
+        name: 'SQL',
+        icon: <TbSql />,
     },
     {
-        name: 'GitHub',
-        icon: <FaNodeJs size={30} />,
-    },
-    {
-        name: 'Figma',
-        icon: <FaNodeJs size={30} />,
-    },
-    {
-        name: 'Adobe XD',
-        icon: <FaNodeJs size={30} />,
+        name: 'Supabase',
+        icon: <RiSupabaseFill />,
     },
     {
         name: 'Tailwind CSS',
-        icon: <FaNodeJs size={30} />,
+        icon: <SiTailwindcss />,
     },
     {
         name: 'Bootstrap',
-        icon: <FaNodeJs size={30} />,
+        icon: <FaBootstrap />,
     },
     {
-        name: 'Material UI',
-        icon: <FaNodeJs size={30} />,
+        name: 'Docker',
+        icon: <FaDocker />,
     },
     {
-        name: 'Chakra UI',
-        icon: <FaNodeJs size={30} />,
+        name: 'Git',
+        icon: <FaGitAlt />,
+    },
+    {
+        name: 'GitHub',
+        icon: <FaGithub />,
+    },
+    {
+        name: 'Copilot',
+        icon: <GoCopilot />,
+    },
+    {
+        name: 'Vercel',
+        icon: <IoLogoVercel />,
     },
 ]
 
-function Skill({ name, icon }: { name: string, icon: JSX.Element }) {
+function Skill({ name, icon }: { name: string, icon: JSX.Element }) {    
+
     return (
         <div className="border border-neutral-200 p-2 rounded-lg bg-white flex gap-1 items-center text-neutral-400">
-            {icon}
-            <p className="text-xl text-neutral-600">{name}</p>
+            <div className="text-xl max-sm:text-md">
+                {icon}
+            </div>
+            <p className="text-xl max-sm:text-md text-neutral-600">{name}</p>
         </div>
     )
 }
 
 export default function SkillsSection() {
     return (
-        <section id="skills" className="flex flex-col items-center justify-center text-center mt-20">
+        <section id="skills" className="flex flex-col items-center justify-center text-center mt-36">
             <h1 className='text-4xl font-bold'>My Skills</h1>
             <div className="flex flex-wrap gap-2 justify-center max-w-2xl pt-5">
                 {skills.map(skill => <Skill key={skill.name} name={skill.name} icon={skill.icon} />)}
