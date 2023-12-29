@@ -8,6 +8,12 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Muhammad Umar',
   description: 'Personal Portfolio Website',
+  icons: [
+    {
+      url: '/person.png',
+      href: '/person.png',
+    }
+  ]
 }
 
 export default function RootLayout({
