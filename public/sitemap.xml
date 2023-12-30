@@ -1,0 +1,17 @@
+   <!-- public/sitemap.xml -->
+   <xml version="1.0" encoding="UTF-8">
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     <url>
+       <loc>http://mumar.live/</loc>
+     </url>
+     <url>
+       <loc>http://mumar.live/project/nobrakes</loc>
+     </url>
+     <url>
+       <loc>http://mumar.live/project/socialmedia</loc>
+     </url>
+     <url>
+       <loc>http://mumar.live/project/coinshot</loc>
+     </url>
+   </urlset>
+   </xml>
